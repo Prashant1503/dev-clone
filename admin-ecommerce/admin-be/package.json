@@ -4,15 +4,20 @@
   "description": "Admin ecommerce backend",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "set NODE_ENV=development&& nodemon app.js",
+    "prod": "set NODE_ENV=production&& nodemon app.js",
+    "test": "set HOST=localhost&& set PORT=8000&& nodemon app.js"
   },
   "author": "Prashant vani",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "dotenv": "^8.5.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mariadb": "^2.5.3",
+    "morgan": "^1.10.0",
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.2"
   },
