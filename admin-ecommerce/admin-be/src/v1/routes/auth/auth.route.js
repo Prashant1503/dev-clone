@@ -1,4 +1,6 @@
+const passport = require('../../config/passport.config');
 const router = require('express').Router();
+
 
 const {
     registerUser,
@@ -28,6 +30,14 @@ router.post('/signin', loginUser);
  */
 // router.post('/forgot-password');
 
+/**
+ * @route : /google
+ * @method : POST
+ * @access : Protected
+ */
+router.post('/google', passport.authenticate("google"), (req, res) => {
+    console.log(res);
+});
 
 // export
 module.exports = router;

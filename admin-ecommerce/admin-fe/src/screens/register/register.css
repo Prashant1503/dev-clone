@@ -1,0 +1,46 @@
+/** Common */
+.flex {
+    display: flex;
+}
+
+.justify-item  {
+    justify-content: space-between;
+}
+
+.align-item {
+    align-items: center;
+}
+.container {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  
+}
+
+.registeration-card {
+    padding: 1.25rem;
+    margin: 0.55rem;
+}
+
+.registeration-button {
+    background: whitesmoke;
+    border-color: whitesmoke;
+    margin-top: 0.98rem;
+    
+}
+
+.registeration-button:hover {
+    background: coral;
+    border-color: coral;
+}
+
+.custom-input{
+    border-color: whitesmoke;
+}
+
+.custom-input:hover,:focus{
+    border-color: dodgerblue;
+    outline: 0;
+
+}

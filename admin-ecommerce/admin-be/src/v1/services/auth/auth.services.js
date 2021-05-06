@@ -83,3 +83,8 @@ exports.signIn = async (authObj) => {
         }
     });
 }
+
+/** @function : sign-in with gmail */
+exports.googleSignIn = async () => {
+
+}
