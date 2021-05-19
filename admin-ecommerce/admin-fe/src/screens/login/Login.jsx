@@ -69,7 +69,7 @@ const Login = () => {
                                         title="Login user"
                                         className="login-button" />
 
-                                    <CustomButton title="Sign in with google" className="google-button" handler={loginWithGoogle} />
+                                    <CustomButton title="Sign in with google" className="login-button" handler={loginWithGoogle} />
                                 </div>
 
                             </Form>

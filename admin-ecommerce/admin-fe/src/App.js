@@ -4,14 +4,15 @@ import './index.css';
 import { Container } from 'react-bootstrap';
 
 import { Login, Register } from "./screens/index";
-import { Header, Home, Layout } from './containers/index';
+import { Header, Home, Layout, Sidebar } from './containers/index';
 import { Switch, Route } from 'react-router-dom';
 
 export default class App extends Component {
   render() {
     return (
       <>
-        {/* <Header /> */}
+        <Header />
+        <Sidebar />
 
         <Switch>
           <Route exact path="/" component={Home} />

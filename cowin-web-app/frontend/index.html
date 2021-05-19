@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cowin-App</title>
+
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+
+
+    <div class="root_container">
+
+
+        <!-- dropdown section -->
+        <div class="dropdown_container">
+            <div class="dc_dropdown-section">
+
+                <div class="cm_state">
+                    <select name="states" id="state" onclick="showStatesData();" onchange="fetchSelectedStateRecord();">
+
+                        <option >Select State</option>
+                    </select>
+                </div>
+                &nbsp;
+                <div class="cm_district">
+                    <select name="districts" id="district"  onchange="fetchCount();"
+                    ">
+                        <option>Select Districts</option>
+
+                    </select>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="main_vaccination_container">
+            <!-- vaccination contaier -->
+            <div class="vaccination_container">
+
+                <div class="vc_one">
+
+                    <!-- img container -->
+                    <div class="vc_one_img-container">
+                        <img>
+                    </div>
+
+                    <!--  -->
+                    <div class="">
+                        <p>Sites Conducting Vaccination </p>
+                        <h1 id="total_vaccination_count">0</h1>
+                    </div>
+
+                    <div class="row_container">
+
+                        <div class="vaccination_conduction-flex">
+                            <div>
+                                <span>Government</span>
+                                <p id="government_count">0</p>
+                            </div>
+
+                            <div>
+                                <span>private</p>
+                                    <p id="private_count">0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            &nbsp;
+            <div class="vaccination_container">
+
+                <div class="vc_one">
+
+                    <!-- img container -->
+                    <div class="vc_one_img-container">
+                        <img>
+                    </div>
+
+                    <!--  -->
+                    <div class="">
+                        <p>Total Vaccination Dose</p>
+                        <h2 id="total_vcn_count">0</h2>
+                        </h3>
+                    </div>
+
+                    <div class="row_container">
+
+                        <div class="vaccination_conduction-flex">
+                            <div>
+                                <span>Dose 1</span>
+                                <p id="dose_one">0
+
+                                </p>
+                            </div>
+
+                            <div>
+                                <span>Dose 2</span>
+                                <p id="dose_two">0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

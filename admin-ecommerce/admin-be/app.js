@@ -29,7 +29,7 @@ passport.deserializeUser((obj, cb) => { cb(null, obj) });
 const authRoute = require('./src/v1/routes/auth/auth.route');
 
 // routes 
-// app.get('/api/v1/auth', authRoute);
+app.use('/api/v1/auth', authRoute);
 app.post('/auth/google', passport.authenticate("google", { scope: ['profile'] }));
 
 app.get('/api/google/callback', passport.authenticate('google', { failureRedirect: '/auth/failed' }), (req, res, next) => {

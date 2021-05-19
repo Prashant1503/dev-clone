@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <script src="./index.js">
+
+
+        onload = function () {
+
+            var rows = document.getElementById('tb').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+
+            for (i = 0; i < rows.length; i++) {
+                rows[i].onclick = function () {
+                    alert(this.rowIndex + 1);
+                }
+            }
+        }
+
+
+    </script>
+    <!-- <h1>Covid Data</h1> -->
+
+    <button onclick="getWorldData();" class="custom-button">Get World Cases</button>
+    <button onclick="getStatesData();" class="custom-button">Get States Cases</button>
+    <button onclick="addStatesData();" class="custom-button">Add State data</button>
+    <button onclick="refresh();" class="custom-button">Refresh</button>
+
+
+    <!-- <button onclick="showDistricts();" class="custom-button">Get District Data</button> -->
+
+    <div class="container">
+        <div class="confirmed__cases_container">
+            <h3 style="color: red;">Confirmed</h3>
+            <p id="confirmed">++ 81,233</p>
+        </div>
+        <div class="active_cases_container">
+            <h3 style="color: blue;">Active</h3>
+            <p id="active">++ 0</p>
+        </div>
+        <div class="recovered_cases_container">
+            <h3 style="color: green;">Recovered</h3>
+            <p id="recovered">++ 9,271</p>
+        </div>
+        <div class="deceased_cases_container">
+            <h3 style="color: darkgrey;">Deceased</h3>
+            <p id="deceased">+100</p>
+        </div>
+
+
+    </div>
+
+
+    <!-- table data -->
+    <div class="table-container">
+        <table id="tb">
+            <thead>
+                <tr>
+                    <th>State</th>
+                    <th>Confirmed</th>
+                    <th>Active</th>
+                    <th>Recovered</th>
+                    <th>Deceased</th>
+
+                </tr>
+            </thead>
+            <tbody id="data">
+
+            </tbody>
+
+        </table>
+    </div>
+
+
+</body>
+
+</html>

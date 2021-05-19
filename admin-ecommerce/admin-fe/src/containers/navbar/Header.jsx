@@ -14,17 +14,32 @@ import { Input } from '../../components/index';
 const Header = () => {
 
     return (
-        <Navbar className="bg-light justify-content-between">
-            <Navbar.Brand href="#home">Admin App</Navbar.Brand>
+        <Navbar bg="light" variant="dark">
+            <NavLink to="/home"> Admin-App</NavLink >
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <NavLink to="/signin">Login</NavLink>
-                    <NavLink to="/signup">SignUp</NavLink>
+
+                    <ul>
+                        <li>
+                            <NavLink to="/home">Home</NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink to="/products">Products</NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink to="/category">category</NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink to="/setting">Settings</NavLink>
+                        </li>
+                    </ul>
                 </Nav>
             </Navbar.Collapse>
-        </Navbar>
+        </Navbar >
     )
 }
 

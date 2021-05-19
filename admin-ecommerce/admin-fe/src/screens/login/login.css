@@ -28,6 +28,9 @@
     background: whitesmoke;
     border-color: whitesmoke;
     margin-top: 0.98rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
 }
 

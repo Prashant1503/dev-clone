@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background: #EEEEEE;
+}
+
+.cm_state,select {
+    padding: 5px;
+   border-color: grey;
+   border-radius: 5px;
+}
+
+.cm_district,select {
+    padding: 5px;
+   border-color: grey;
+   border-radius: 5px;
+}
+
+
+
+ .root_container.dropdown_container  {
+     display: flex;
+ }
+ 
+ .dc_dropdown-section {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: cornsilk;
+ }
+
+ .vaccination_container {
+     padding: 10px;
+     background-color: white;
+     border-radius: 5px;
+     border-color: white;
+     width: 320px;
+     display: flex;
+ }
+
+ .main_vaccination_container {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 10px;
+
+ }
+
+ .vaccination_conduction-flex {
+     display: flex;
+     justify-content: space-around;
+ }

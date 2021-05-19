@@ -2,11 +2,12 @@ import React from 'react';
 import './home.css';
 
 import { Jumbotron } from 'react-bootstrap';
+import { Sidebar } from '../index'
 
 const Home = () => {
     return (
         <Jumbotron>
-            <h1>Home Component</h1>
+            <Sidebar />
         </Jumbotron>
     )
 }
