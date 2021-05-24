@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) {
+  #contact .post-heading h3 {
+    font-size: 2em;
+  }
+}

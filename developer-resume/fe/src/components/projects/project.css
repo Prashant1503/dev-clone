@@ -1,0 +1,56 @@
+.heading-content {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.heading-content h5 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #fff;
+  font-family: monospace;
+}
+
+#service .btn {
+  width: 40%;
+  padding: 15px 22px;
+  background: #000;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#service .btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#service .btn:hover {
+  border: 2px solid #1ebba3;
+  cursor: pointer;
+}
+
+/* Know-more button */
+#knowMore .btn {
+  width: 40%;
+  padding: 15px 22px;
+  background: #000;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#knowMore .btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#knowMore .btn:hover {
+  border: 2px solid #1ebba3;
+  cursor: pointer;
+}
