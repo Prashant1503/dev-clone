@@ -15,17 +15,18 @@ export default class Contact extends Component {
             <label>Full Name</label>
             <input type="text" className="form-control" id="name"></input>
           </div>
-
+          <br />
           <div className="form-group">
             <label>Email address</label>
             <input type="email" className="form-control" id="email"></input>
           </div>
-
+          <br />
           <div className="form-group">
             <label>Message</label>
             <textarea className="form-control"></textarea>
           </div>
 
+          <br />
           <button type="submit" className="btn btn-primary">
             Submit
           </button>

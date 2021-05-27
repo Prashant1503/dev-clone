@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./about.css";
 
-import User from "../../assets/images/user.jpg";
+import { UserImage } from "../../constants/contants";
 import { Link } from "react-router-dom";
 
 export default class About extends Component {
@@ -15,13 +15,11 @@ export default class About extends Component {
 
         <div className="row">
           <div className="col-lg-5 col-md-5 col-11">
-            <img src={User} className="" width="420px" height="320px" />
+            <img src={UserImage} className="" width="320px" height="320px" />
           </div>
 
           {/*  */}
-          <div className="col-lg-6 col-md-6 col-12">
-            <h2>Won't to know me ?</h2>
-            <hr></hr>
+          <div className="col-lg-6 col-md-6 col-12 pb-4">
             <p>
               I'm a enthausiastic full-stack developer,I'm having a skill set in
               backend technologies i.e (Node.js,express.js) and worked on

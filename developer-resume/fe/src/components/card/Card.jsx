@@ -7,9 +7,14 @@ export default class Card extends Component {
   }
   render() {
     return (
-      <div className="col-lg-6 col-md-6 col-12 pb-5">
+      <div className="col-lg-5 col-md-5 col-12 pb-5">
         <div className="card">
-          <img className="card-img-top" alt="one" src={this.props.image}></img>
+          <img
+            className="card-img-top"
+            alt="one"
+            src={this.props.image}
+            style={{ alignItems: "center" }}
+          ></img>
           <div className="card-body">
             <h5 className="card-title">{this.props.title}</h5>
             <p className="card-text">{this.props.description}</p>

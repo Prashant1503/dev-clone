@@ -2,11 +2,7 @@ import React, { Component } from "react";
 import "./project.css";
 
 import { Card } from "../index";
-import {
-  CovidAppImgOne,
-  CovidAppImgThree,
-  CovidAppImgTwo,
-} from "../../constants/contants";
+import { CovidAppImgOne, EcomImgOne } from "../../constants/contants";
 
 export default class Projects extends Component {
   render() {
@@ -18,9 +14,9 @@ export default class Projects extends Component {
       },
 
       {
-        title: "Clothes Rental",
-        description: "Buy & Sell clothes on rent",
-        img: CovidAppImgTwo,
+        title: "Ecommerce Clone",
+        description: "An ecommerce clone android app",
+        img: EcomImgOne,
       },
     ];
     return (

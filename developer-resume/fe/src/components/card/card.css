@@ -3,4 +3,7 @@
 }
 
 .card-img-top {
+  padding: 5px;
+  height: 230px;
+  width: 220px;
 }
