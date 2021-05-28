@@ -1,0 +1,29 @@
+/* Avaatar */
+#user-icon {
+  height: 100px;
+  width: 100px;
+  padding: 3px;
+}
+
+.card {
+  height: 40%;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 10px;
+}
+
+#card_title {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#login_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#auth_section {
+}

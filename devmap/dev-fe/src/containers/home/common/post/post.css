@@ -1,0 +1,25 @@
+#post_user-img {
+  height: 40px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.post-input {
+  border-radius: 1em;
+  padding: 4px;
+  outline-style: none;
+}
+
+button {
+  background-color: white;
+  padding: 4px;
+  border-style: none;
+  border-radius: 4px;
+  margin-right: 3px;
+}
+
+button:hover {
+  display: inline-block;
+  background-color: #eeeeee;
+  transition: 3ms;
+}

@@ -1,0 +1,10 @@
+#profile_img {
+  height: 55px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+#connect_btn {
+  border-radius: 7px;
+  border-color: blue;
+}
